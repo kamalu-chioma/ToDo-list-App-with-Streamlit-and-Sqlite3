@@ -1,0 +1,6 @@
+streamlit
+pandas
+plotly
+numpy
+wheel
+sqlite3
