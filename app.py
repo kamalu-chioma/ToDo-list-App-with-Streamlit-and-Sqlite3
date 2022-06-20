@@ -10,9 +10,9 @@ import plotly.express as px
 
 
 HTML_BANNER = """
-    <div style="background-color:#800000;padding:12px;border-radius:15px">
-    <h1 style="color:silver;text-align:center;">ToDo App (CRUD)</h1>
-    <p style="color:white;text-align:center;">Built with Streamlit</p>
+    <div style="background-color:#800080; padding:30px; border-radius:15px">
+    <h2 style="color:silver; text-align:center;" > ToDo App</h2>
+    
     </div>
     """
 
@@ -22,18 +22,19 @@ def main():
 
 
 	menu = ["Create","Read","Update","Delete","About"]
-	choice = st.sidebar.selectbox("Menu",menu)
+	choice = st.sidebar.selectbox("Menu", menu)
 	create_table()
 
+	#menu item1, Create
 	if choice == "Create":
-		st.subheader("Add Item")
+		st.subheader("Add New Task")
 		col1,col2 = st.columns(2)
 		
 		with col1:
 			task = st.text_area("Task To Do")
 
 		with col2:
-			task_status = st.selectbox("Status",["ToDo","Doing","Done"])
+			task_status = st.selectbox("Status",["Pending","Doing","Done"])
 			task_due_date = st.date_input("Due Date")
 
 		if st.button("Add Task"):
@@ -41,6 +42,7 @@ def main():
 			st.success("Added ::{} ::To Task".format(task))
 
 
+	#menu item2, Read		
 	elif choice == "Read":
 		# st.subheader("View Items")
 		with st.expander("View All"):
@@ -58,7 +60,7 @@ def main():
 			p1 = px.pie(task_df,names='index',values='Status')
 			st.plotly_chart(p1,use_container_width=True)
 
-
+	#menu item3, Update
 	elif choice == "Update":
 		st.subheader("Edit Items")
 		with st.expander("Current Data"):
@@ -71,7 +73,7 @@ def main():
 		selected_task = st.selectbox("Task",list_of_tasks)
 		task_result = get_task(selected_task)
 		# st.write(task_result)
-
+		
 		if task_result:
 			task = task_result[0][0]
 			task_status = task_result[0][1]
@@ -83,7 +85,7 @@ def main():
 				new_task = st.text_area("Task To Do",task)
 
 			with col2:
-				new_task_status = st.selectbox(task_status,["ToDo","Doing","Done"])
+				new_task_status = st.selectbox(task_status,["Pending","Doing","Done"])
 				new_task_due_date = st.date_input(task_due_date)
 
 			if st.button("Update Task"):
@@ -96,7 +98,7 @@ def main():
 				clean_df = pd.DataFrame(result,columns=["Task","Status","Date"])
 				st.dataframe(clean_df)
 
-
+	#menu item4, Delete
 	elif choice == "Delete":
 		st.subheader("Delete")
 		with st.expander("View Data"):
@@ -116,10 +118,11 @@ def main():
 			# st.write(result)
 			clean_df = pd.DataFrame(result,columns=["Task","Status","Date"])
 			st.dataframe(clean_df)
-
+			
+        #menu item5, About App
 	else:
 		st.subheader("App Description")
-		st.info("Add a new task to your todo list; Choose task status and due date; Update or edit a task; and delete task.  This app demonstrates the use of crud operations in streamlit")
+		st.info("Add a new task to your todo list, Choose task status and due date; View the task and the task status; Update or edit a task; and delete task after completion.  This app demonstrates the use of CRUD operations in Streamlit")
 		st.text("App by Chioma Kamalu ")
 
 
