@@ -9,7 +9,7 @@ App Url: https://share.streamlit.io/kamalu-chioma/todo-list-app-with-streamlit-a
 
 Method:
 ---> App created in python as a webapp using the streamlit module.
----> App uses Sqlite to effectualize the CRUD operations.
+---> App uses Sqlite3 to effectualize the CRUD operations.
 ---> App was deployed to Streamlit public through this repos.
 
 PS: App is better viewed in dektop mode or on a PC
