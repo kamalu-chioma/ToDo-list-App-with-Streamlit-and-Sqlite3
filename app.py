@@ -125,6 +125,8 @@ def main():
 		st.info("Add a new task to your todo list, Choose task status and due date; View the task and the task status; Update or edit a task; and delete task after completion.  This app demonstrates the use of CRUD operations in Streamlit")
 		st.text("App by Chioma Kamalu ")
 
-
+st.set_page_config(page_icon="✓", page_title="ToDo App"
+		   
+		   
 if __name__ == '__main__':
 	main()
