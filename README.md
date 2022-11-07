@@ -1,7 +1,7 @@
 # ToDo-list-App-with-Streamlit-and-Sqlite3
 
 About: 
-This app allows the user to CREATE a task (including the time and status of the app); User can READ(View) tasks, including a pie graph of the Status of the tasks created; User can UPDATE(edit) the tasks in the created; and user can DELETE any task they choose to delete.
+This app allows the user to CREATE a task (and include the time and status of the app); User can READ(View) tasks, including a pie graph of the Status of the tasks created; User can UPDATE(edit) the tasks in the created; and user can DELETE any task they choose to delete.
 
 
 App Url: https://share.streamlit.io/kamalu-chioma/todo-list-app-with-streamlit-and-sqlite3/main/app.py
