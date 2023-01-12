@@ -12,7 +12,7 @@ Method:
 ---> App uses Sqlite3 to effectualize the CRUD operations.
 ---> App was deployed to Streamlit public through this repos.
 
-PS: App is better viewed in dektop mode or on a PC
+PS: App is better viewed in dektop mode of mobile browser or on a PC
 
 
 ******Here are Some Post deployment photos of the interface******
