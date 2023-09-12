@@ -57,8 +57,8 @@ def main():
 			task_df = task_df.reset_index()
 			st.dataframe(task_df)
 
-			p1 = px.pie(task_df,names='index',values='Status')
-			st.plotly_chart(p1,use_container_width=True)
+			# p1 = px.pie(task_df,names='index',values='Status')
+			# st.plotly_chart(p1,use_container_width=True)
 
 	#menu item3, Update
 	elif choice == "Update":
