@@ -6,9 +6,9 @@ import random
 import openai
 import os
 import plotly.express as px 
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from openai import OpenAI
-load_dotenv()
+
 
 # client = OpenAI(
 #     api_key = os.getenv("open_ai_key"),
