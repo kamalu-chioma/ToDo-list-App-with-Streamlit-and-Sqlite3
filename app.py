@@ -10,9 +10,10 @@ from dotenv import load_dotenv
 from openai import OpenAI
 load_dotenv()
 
-client = OpenAI(
-    api_key = os.getenv("open_ai_key"),
-)
+# client = OpenAI(
+#     api_key = os.getenv("open_ai_key"),
+# )
+client = openai.OpenAI(api_key=st.secrets["open_ai_key"])
 
 #openai.api_key = os.getenv('open_ai_key')
 
