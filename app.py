@@ -14,8 +14,9 @@ from openai import OpenAI
 #     api_key = os.getenv("open_ai_key"),
 # )
 # os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+#openai.api_key = st.secrets["open_ai"]["api_key"]
 
-client = openai.OpenAI(api_key=st.secrets["open_ai_key"])
+client = openai.OpenAI(api_key = st.secrets["open_ai"]["api_key"])
 
 #openai.api_key = os.getenv('open_ai_key')
 
