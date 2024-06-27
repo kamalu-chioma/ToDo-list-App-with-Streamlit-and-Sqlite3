@@ -15,7 +15,7 @@ from openai import OpenAI
 # )
 # os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
-client = openai.OpenAI(api_key=st.secrets["openaiDetails"]["open_ai_key"])
+client = openai.OpenAI(api_key=st.secrets["open_ai_key"])
 
 #openai.api_key = os.getenv('open_ai_key')
 
@@ -33,20 +33,20 @@ def main():
 
     menu = ["Create","Read","Update","Delete","AI help", "About"]
     choice = st.sidebar.selectbox("Menu", menu)
-    st.markdown("## Menu")
-    col1, col2, col3, col4, col5, col6 = st.columns(6)
-    if col1.button("Create"):
-        choice = "Create"
-    if col2.button("Read"):
-        choice = "Read"
-    if col3.button("Update"):
-        choice = "Update"
-    if col4.button("Delete"):
-        choice = "Delete"
-    if col5.button("AI help"):
-        choice = "AI help"
-    if col6.button("About"):
-        choice = "About"
+    # st.markdown("## Menu")
+    # col1, col2, col3, col4, col5, col6 = st.columns(6)
+    # if col1.button("Create"):
+    #     choice = "Create"
+    # if col2.button("Read"):
+    #     choice = "Read"
+    # if col3.button("Update"):
+    #     choice = "Update"
+    # if col4.button("Delete"):
+    #     choice = "Delete"
+    # if col5.button("AI help"):
+    #     choice = "AI help"
+    # if col6.button("About"):
+    #     choice = "About"
 
     create_table()
 
