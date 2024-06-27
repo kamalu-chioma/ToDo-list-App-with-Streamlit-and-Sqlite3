@@ -13,6 +13,8 @@ from openai import OpenAI
 # client = OpenAI(
 #     api_key = os.getenv("open_ai_key"),
 # )
+# os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+
 client = openai.OpenAI(api_key=st.secrets["open_ai_key"])
 
 #openai.api_key = os.getenv('open_ai_key')
