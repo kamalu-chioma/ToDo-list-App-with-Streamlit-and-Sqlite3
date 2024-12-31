@@ -19,7 +19,7 @@ The app was built using the following technologies and methodologies:
 
 ## Note
 
-For optimal viewing experience, it is recommended to use the desktop mode of a mobile browser or access the app on a PC.
+For optimal viewing experience, it is recommended to use the desktop mode of a mobile browser or access the app on a Laptop/desktop.
 
 ## Screenshots
 
