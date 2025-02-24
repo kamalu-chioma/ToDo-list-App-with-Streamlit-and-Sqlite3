@@ -1,4 +1,4 @@
-# Daily planner App with Streamlit and Sqlite3
+## Daily planner App with Streamlit and Sqlite3
 
 ## About
 
