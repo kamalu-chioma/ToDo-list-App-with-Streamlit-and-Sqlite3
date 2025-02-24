@@ -2,7 +2,7 @@
 
 ## About
 
-This Streamlit web application allows users to manage tasks efficiently by providing essential functionalities:
+This Streamlit application allows users to manage tasks efficiently by providing essential functionalities:
 - **CREATE**: Users can add a new task with specific time and status.
 - **READ (View)**: Users can view tasks and visualize task status using a pie chart.
 - **UPDATE (Edit)**: Users can modify existing tasks.
